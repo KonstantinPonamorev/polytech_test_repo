@@ -1,0 +1,36 @@
+Networking
+
+Twisted
+Twisted is an event-driven networking engine. It can be used to build applications around many different networking protocols, including http servers and clients, applications using SMTP, POP3, IMAP or SSH protocols, instant messaging and much more.
+
+PyZMQ
+PyZMQ is the Python binding for ZeroMQ, which is a high-performance asynchronous messaging library. One great advantage of ZeroMQ is that it can be used for message queuing without a message broker. The basic patterns for this are:
+
+request-reply: connects a set of clients to a set of services. This is a remote procedure call and task distribution pattern.
+publish-subscribe: connects a set of publishers to a set of subscribers. This is a data distribution pattern.
+push-pull (or pipeline): connects nodes in a fan-out / fan-in pattern that can have multiple steps, and loops. This is a parallel task distribution and collection pattern.
+For a quick start, read the ZeroMQ guide.
+
+gevent
+gevent is a coroutine-based Python networking library that uses greenlets to provide a high-level synchronous API on top of the libev event loop.
+
+
+
+
+
+Networking/—ети
+
+Twisted
+"Twisted" - это механизм сетей, управл€емый событи€ми. ќн может использоватьс€ дл€ создани€ приложений по многим различным сетевым сетевым протоколам, включа€ HTTP-серверы и клиенты, приложени€, использующие протоколы SMTP, POP3, IMAP или SSH, обмен мгновенными сообщени€ми и многое другое.
+
+PyZMQ
+"PyZMQ" - это св€зка "ѕитона" дл€ "ZeroMQ", котора€ представл€ет собой высокопроизводительную асинхронную библиотеку сообщений. ќдним из больших преимуществ "ZeroMQ" €вл€етс€ то, что он может использоватьс€ дл€ очереди сообщений без брокера сообщений. ќсновными шаблонами дл€ этого €вл€ютс€:
+
+"request-reply" (запрос-ответ): св€зывает набор клиентов с набором сервисов. Ёто удаленный вызов процедуры и шаблон распределени€ задач.
+"publish-subscribe" (опубликование-подписка): св€зывает набор издателей с набором подписчиков. Ёто шаблон распределени€ данных.
+"push-pull" (толкай-т€ни/конвейер): соедин€ет узлы в шаблоне "выход/вход", которые могут иметь несколько шагов и петель. Ёто параллельна€ задача распределени€ и сбора.
+ƒл€ быстрого начала ознакомьтесь с руководством "ZeroMQ".
+
+gevent
+"gevent" представл€ет собой сетевую библиотеку "ѕитона" на основе сопрограмм, котора€ использует сопрограмму "greenlets" дл€ предоставлени€ высокоуровневого синхронного API поверх цикла событий "libev".
+
